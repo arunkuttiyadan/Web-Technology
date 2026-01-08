@@ -1,0 +1,24 @@
+body{
+    font-family: Arial;
+    text-align:center;
+}
+
+.board{
+    display:flex;
+    justify-content:space-around;
+    margin-top:20px;
+}
+
+.column{
+    width:30%;
+    min-height:300px;
+    border:2px solid black;
+    padding:10px;
+}
+
+.task{
+    background:#87cefa;
+    margin:10px;
+    padding:10px;
+    cursor:move;
+}
