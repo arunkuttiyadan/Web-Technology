@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Adaptive Registration System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>User Registration</h2>
+
+<form id="regForm" onsubmit="return validateForm()">
+
+  <label>Name</label>
+  <input type="text" id="name">
+
+  <label>Email</label>
+  <input type="email" id="email">
+
+  <label>Password</label>
+  <input type="password" id="password">
+
+  <label>Confirm Password</label>
+  <input type="password" id="confirmPassword">
+
+  <label>Age</label>
+  <input type="number" id="age">
+
+  <label>Role</label>
+  <select id="role" onchange="changeRoleRules()">
+    <option value="">Select Role</option>
+    <option value="student">Student</option>
+    <option value="teacher">Teacher</option>
+    <option value="admin">Admin</option>
+  </select>
+
+  <div id="skillsDiv">
+    <label>Skills</label>
+    <input type="text" id="skills" placeholder="Eg: Java, HTML">
+  </div>
+
+  <p id="message"></p>
+
+  <button type="submit">Register</button>
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>

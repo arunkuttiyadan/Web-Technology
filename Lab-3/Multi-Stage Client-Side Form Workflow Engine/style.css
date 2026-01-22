@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+}
+
+.container {
+    width: 400px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.progress-bar {
+    width: 100%;
+    background: #ddd;
+    height: 8px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.progress {
+    height: 8px;
+    width: 0%;
+    background: #4CAF50;
+    border-radius: 5px;
+    transition: width 0.3s;
+}
+
+.stage {
+    display: none;
+}
+
+.stage.active {
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+button {
+    padding: 8px 12px;
+    margin-top: 10px;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+}

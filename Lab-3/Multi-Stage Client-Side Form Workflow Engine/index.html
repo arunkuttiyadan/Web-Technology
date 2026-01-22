@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multi-Stage Form Workflow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+        <div class="progress" id="progress"></div>
+    </div>
+
+    <!-- Stage 1 -->
+    <div class="stage active">
+        <h3>Stage 1: Personal Info</h3>
+        <input type="text" id="name" placeholder="Name">
+        <input type="email" id="email" placeholder="Email">
+        <p class="error" id="error1"></p>
+        <button onclick="nextStage()">Next</button>
+    </div>
+
+    <!-- Stage 2 -->
+    <div class="stage">
+        <h3>Stage 2: Contact Details</h3>
+        <input type="text" id="mobile" placeholder="Mobile Number">
+        <input type="text" id="city" placeholder="City">
+        <p class="error" id="error2"></p>
+        <button onclick="prevStage()">Back</button>
+        <button onclick="nextStage()">Next</button>
+    </div>
+
+    <!-- Stage 3 -->
+    <div class="stage">
+        <h3>Stage 3: Account Setup</h3>
+        <input type="password" id="password" placeholder="Password">
+        <input type="password" id="confirm" placeholder="Confirm Password">
+        <p class="error" id="error3"></p>
+        <button onclick="prevStage()">Back</button>
+        <button onclick="nextStage()">Next</button>
+    </div>
+
+    <!-- Stage 4 -->
+    <div class="stage">
+        <h3>Stage 4: Confirmation</h3>
+        <p>Please review and submit your form.</p>
+        <p class="error" id="error4"></p>
+        <button onclick="prevStage()">Back</button>
+        <button onclick="submitForm()">Submit</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
