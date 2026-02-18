@@ -1,0 +1,29 @@
+{
+  "products": [
+    {
+      "name": "Laptop",
+      "price": 55000,
+      "category": "Electronics"
+    },
+    {
+      "name": "Mobile Phone",
+      "price": 20000,
+      "category": "Electronics"
+    },
+    {
+      "name": "Notebook",
+      "price": 50,
+      "category": "Stationery"
+    },
+    {
+      "name": "Headphones",
+      "price": 1500,
+      "category": "Electronics"
+    },
+    {
+      "name": "Pen",
+      "price": 20,
+      "category": "Stationery"
+    }
+  ]
+}

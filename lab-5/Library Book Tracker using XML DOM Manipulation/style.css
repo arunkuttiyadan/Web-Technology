@@ -1,0 +1,38 @@
+body
+{
+    font-family: Arial;
+}
+
+input, select
+{
+    padding: 5px;
+    margin: 5px;
+}
+
+button
+{
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+table
+{
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td
+{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.success
+{
+    color: green;
+}
+
+.error
+{
+    color: red;
+}

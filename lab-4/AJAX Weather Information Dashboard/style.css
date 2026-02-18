@@ -1,0 +1,68 @@
+body
+{
+    font-family: Arial;
+    background-color: #f4f4f4;
+}
+
+.container
+{
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+input
+{
+    padding: 8px;
+    width: 80%;
+}
+
+button
+{
+    padding: 8px 15px;
+    margin-top: 10px;
+}
+
+#weatherResult
+{
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Loading Spinner */
+#spinner
+{
+    margin: 10px auto;
+    border: 5px solid #ccc;
+    border-top: 5px solid blue;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+}
+
+.hidden
+{
+    display: none;
+}
+
+@keyframes spin
+{
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+.success
+{
+    color: green;
+}
+
+.error
+{
+    color: red;
+}
