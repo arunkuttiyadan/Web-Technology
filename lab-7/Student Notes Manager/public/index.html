@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Student Notes Manager</title>
+
+<style>
+
+body{
+font-family: Arial;
+background:#f4f6f9;
+padding:40px;
+}
+
+.container{
+width:600px;
+margin:auto;
+background:white;
+padding:25px;
+border-radius:8px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+h1{
+text-align:center;
+}
+
+input, textarea{
+width:100%;
+padding:10px;
+margin:8px 0;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+padding:10px 15px;
+border:none;
+border-radius:5px;
+background:#007bff;
+color:white;
+cursor:pointer;
+margin-top:5px;
+}
+
+button:hover{
+background:#0056b3;
+}
+
+.note{
+border:1px solid #ddd;
+padding:15px;
+margin-top:10px;
+border-radius:5px;
+}
+
+.actions button{
+margin-right:10px;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+<h1>Student Notes Manager</h1>
+
+<h3>Add Note</h3>
+
+<input type="text" id="title" placeholder="Title">
+
+<input type="text" id="subject" placeholder="Subject">
+
+<textarea id="description" placeholder="Description"></textarea>
+
+<button onclick="addNote()">Add Note</button>
+
+<br><br>
+
+<button onclick="loadNotes()">View Notes</button>
+
+<hr>
+
+<div id="notes"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
